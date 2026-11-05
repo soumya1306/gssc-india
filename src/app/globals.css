@@ -1,9 +1,17 @@
 @import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+:root {
+  --font-plus-jakarta: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-jetbrains-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-montserrat: "Montserrat", sans-serif;
+}
 
 @layer base {
   html, body {
     margin: 0;
     padding: 0;
+    font-family: var(--font-plus-jakarta);
   }
   body {
     overscroll-behavior: none;
