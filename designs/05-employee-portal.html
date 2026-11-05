@@ -1,0 +1,407 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="web_dashboard" name="shell-type">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;family=Montserrat:wght@400;500;700;900&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: "#fff7ed",
+              100: "#ffedd5",
+              500: "#f97316",
+              600: "#ea580c",
+              700: "#c2410c",
+            },
+            surface: "#ffffff",
+            background: "#f8fafc"
+          },
+          fontFamily: {
+            sans: ["'Plus Jakarta Sans'", "sans-serif"],
+            mono: ["'JetBrains Mono'", "monospace"],
+            montserrat: ["'Montserrat'", "sans-serif"],
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-[#f8fafc] font-sans text-slate-800 antialiased selection:bg-orange-100 selection:text-orange-900"><aside class="fixed left-0 top-0 h-full w-64 bg-white border-r border-slate-200 z-50 flex flex-col justify-between p-4 shadow-sm"><div class="flex flex-col gap-4"><div class="flex items-center gap-3 px-2 py-1 pb-3 border-b border-slate-100"><div class="inline-flex flex-col select-none text-slate-900" style="font-family: 'Montserrat', sans-serif;"><div class="text-2xl font-black tracking-[-0.04em] leading-none uppercase">GSSC</div><div class="flex flex-col pl-4 -mt-0.5"><span class="text-[9px] font-black tracking-tight leading-none uppercase text-orange-600">INDIA</span><span class="text-[6px] font-normal text-slate-500 leading-tight">Gas &amp; Steam Solutions</span></div></div></div><div class="flex items-center gap-3 p-3 bg-slate-50 rounded-lg border border-slate-200/80"><img alt="Rajesh Kumar Profile" class="w-11 h-11 rounded-full object-cover border border-slate-200 flex-shrink-0 shadow-xs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZNGFc1o1qO4XTLr8ze6vIvgf687P6dc4riVbyssEwush28hRDUFbiBAtm3vx79RBo_vm5ST6LLq4ubSftZXbwcIDB0ndfZ4H5i-yBJBFRqpX5xUPYVbhykXiYqJfiwmW50MxL4RqqSNx2nkSunvHsT_yLhNeFY3KimP25zmWTIhIK9xBhQLihtEYjkMlIjE6XR8EljEh0RXHKNXI2vHE2QlyZFZ0gV6ncF-yYsTtr"><div class="flex flex-col min-w-0"><span class="text-sm font-bold text-slate-800 truncate">Hi! Rajesh Kumar</span><span class="font-mono text-[10px] text-orange-600 font-semibold tracking-wider truncate">PLANT ENG #IND-4089</span></div></div><nav class="flex flex-col gap-1"><button class="w-full flex items-center justify-between px-3 py-2 rounded-lg bg-orange-50/80 text-orange-700 border border-orange-200 text-left transition-colors font-medium shadow-2xs group" type="button"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px] text-orange-600">badge</span><span class="text-xs font-bold text-orange-700">My Details</span></div><span class="material-symbols-outlined text-[16px] text-orange-600">chevron_right</span></button><button class="w-full flex items-center justify-between px-3 py-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors text-left" type="button"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px] text-slate-400">folder_shared</span><span class="text-xs font-medium">My Documents</span></div><span class="font-mono text-[10px] text-slate-400 font-medium">12 FILES</span></button><button class="w-full flex items-center justify-between px-3 py-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors text-left" type="button"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px] text-slate-400">notifications</span><span class="text-xs font-medium">Notifications</span></div><span class="w-4 h-4 rounded-full bg-orange-500 text-white font-mono text-[10px] font-bold flex items-center justify-center">3</span></button><button class="w-full flex items-center justify-between px-3 py-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors text-left" type="button"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px] text-slate-400">account_balance_wallet</span><span class="text-xs font-medium">Payments</span></div><span class="font-mono text-[10px] text-emerald-600 font-semibold">STABLE</span></button><button class="w-full flex items-center justify-between px-3 py-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors text-left" type="button"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px] text-slate-400">help_center</span><span class="text-xs font-medium">Help &amp; Desk</span></div></button></nav></div><div class="pt-4 flex flex-col gap-3"><div class="p-3 rounded-lg bg-slate-50 border border-slate-200/80 flex flex-col gap-1.5"><div class="flex items-center justify-between"><span class="font-mono text-[10px] font-semibold text-slate-500">KYC VERIFICATION</span><span class="font-mono text-[10px] text-amber-600 font-semibold">PENDING RE-SUBMIT</span></div><div class="w-full bg-slate-200 rounded-full h-1.5 overflow-hidden"><div class="bg-orange-500 h-full rounded-full w-2/3"></div></div></div><div class="flex items-center justify-between pt-1"><button class="px-2.5 py-1.5 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-slate-600 hover:text-slate-900 transition-colors flex items-center gap-1.5 text-xs font-medium" title="Settings" type="button"><span class="material-symbols-outlined text-[16px] text-slate-500">settings</span><span class="">Settings</span></button><button class="px-2.5 py-1.5 rounded-lg border border-red-200 bg-red-50/50 hover:bg-red-50 text-red-600 transition-colors flex items-center gap-1.5 text-xs font-medium" title="Session Exit" type="button"><span class="material-symbols-outlined text-[16px]">logout</span><span class="">Logout</span></button></div></div></aside>
+<!-- Main Left Navigation Sidebar -->
+
+<!-- Content Wrapping Area -->
+<div class="pl-64">
+<!-- Clean GSSC Light Mode Top Header -->
+<header class="fixed top-0 left-64 right-0 h-16 bg-white/95 backdrop-blur-md border-b border-slate-200 z-40 flex items-center justify-between px-8 shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><div class="flex items-center gap-3"><span class="font-mono text-xs font-semibold uppercase tracking-wider text-orange-600 bg-orange-50 px-2 py-0.5 rounded border border-orange-100">PORTAL</span><div class="h-4 w-px bg-slate-200"></div><span class="text-sm font-bold text-slate-800 tracking-tight">Employee Operational Portal</span></div><div class="flex items-center gap-4"><button class="relative w-9 h-9 rounded-lg flex items-center justify-center bg-slate-50 border border-slate-200 text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors" title="Notifications"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-orange-500"></span></button><div class="h-6 w-px bg-slate-200"></div><div class="flex items-center gap-3"><div class="flex flex-col text-right hidden sm:flex"><span class="text-xs font-bold text-slate-800">Chief Engineer</span><span class="font-mono text-[10px] text-slate-500 tracking-wider">STATION 04 - HAZ</span></div><div class="w-9 h-9 rounded-full ring-2 ring-orange-500/20 bg-orange-50 text-orange-600 flex items-center justify-center overflow-hidden border border-orange-200"><img alt="Rajesh Kumar Avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZNGFc1o1qO4XTLr8ze6vIvgf687P6dc4riVbyssEwush28hRDUFbiBAtm3vx79RBo_vm5ST6LLq4ubSftZXbwcIDB0ndfZ4H5i-yBJBFRqpX5xUPYVbhykXiYqJfiwmW50MxL4RqqSNx2nkSunvHsT_yLhNeFY3KimP25zmWTIhIK9xBhQLihtEYjkMlIjE6XR8EljEh0RXHKNXI2vHE2QlyZFZ0gV6ncF-yYsTtr"></div></div></div></header>
+<!-- Main Workspace Container -->
+<main class="w-full pt-16 bg-[#f8fafc] px-8 py-8 min-h-screen">
+<div class="flex flex-col w-full max-w-7xl mx-auto">
+<div class="flex flex-col lg:flex-row gap-6 w-full items-start">
+<!-- Sub-Sidebar Navigation & Status -->
+
+<!-- Main Data Entry Area: "My Details" Tab -->
+<section class="flex-1 flex flex-col gap-6 min-w-0 w-full">
+<!-- Top Upload Action Block / Profile Banner -->
+<div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm flex flex-col md:flex-row gap-6 items-center justify-between">
+<!-- Profile Portrait Section -->
+<div class="flex items-center gap-5 w-full md:w-auto">
+<div class="relative group rounded-xl overflow-hidden shadow-sm w-24 h-24 lg:w-28 lg:h-28 flex-shrink-0 bg-slate-100 border border-slate-200">
+<img alt="Uploaded Portrait" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZNGFc1o1qO4XTLr8ze6vIvgf687P6dc4riVbyssEwush28hRDUFbiBAtm3vx79RBo_vm5ST6LLq4ubSftZXbwcIDB0ndfZ4H5i-yBJBFRqpX5xUPYVbhykXiYqJfiwmW50MxL4RqqSNx2nkSunvHsT_yLhNeFY3KimP25zmWTIhIK9xBhQLihtEYjkMlIjE6XR8EljEh0RXHKNXI2vHE2QlyZFZ0gV6ncF-yYsTtr">
+<label class="absolute inset-0 bg-slate-900/60 backdrop-blur-xs opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center cursor-pointer transition-opacity text-white">
+<span class="material-symbols-outlined text-[22px] text-orange-400">add_a_photo</span>
+<span class="text-[11px] font-medium text-center mt-1">Change Photo</span>
+<input accept="image/*" class="hidden" type="file">
+</label>
+</div>
+<div class="flex flex-col">
+<h1 class="text-xl font-bold text-slate-900 tracking-tight">Rajesh Kumar</h1>
+<span class="font-mono text-xs text-orange-600 font-semibold uppercase tracking-wider mt-0.5">DES: THERMAL TURBINE SPECIALIST</span>
+<p class="text-xs text-slate-500 mt-1 max-w-sm">Allowed formats: JPG, PNG. Max 5MB. Strict industrial engineering profile compliance.</p>
+</div>
+</div>
+<!-- Quick Upload Action Buttons -->
+<div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto flex-shrink-0">
+<!-- Upload Aadhar Card -->
+<label class="cursor-pointer inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-orange-500 hover:bg-orange-600 active:scale-98 text-white text-xs font-bold transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">upload</span>
+<span class="">Upload Aadhar (PDF/JPG)</span>
+<input accept=".pdf,image/jpeg,image/png" class="hidden" id="file-aadhar" type="file">
+</label>
+<!-- Upload Curriculum Vitae -->
+<label class="cursor-pointer inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-orange-500 hover:bg-orange-600 active:scale-98 text-white text-xs font-bold transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">upload_file</span>
+<span class="">Upload CV</span>
+<input accept=".pdf,.doc,.docx" class="hidden" id="file-cv" type="file">
+</label>
+</div>
+</div>
+<!-- Core Form Container -->
+<form class="flex flex-col gap-6" id="employee-profile-form" onsubmit="event.preventDefault();">
+<!-- SECTION 1: Basic Details -->
+<div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm flex flex-col gap-5">
+<div class="flex items-center justify-between pb-3 border-b border-slate-100">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-md bg-orange-50 border border-orange-200 text-orange-600 font-mono text-xs font-bold flex items-center justify-center">01</span>
+<h2 class="text-base font-bold text-slate-900 tracking-tight">Basic Details</h2>
+</div>
+<span class="font-mono text-xs text-orange-600 font-semibold bg-orange-50 px-2 py-0.5 rounded border border-orange-100">SEC: BD-101</span>
+</div>
+<!-- Form Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+<!-- Username -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700 flex items-center justify-between">
+<span class="">Username</span>
+<span class="font-mono text-[10px] text-slate-400">REQUIRED</span>
+</label>
+<div class="relative">
+<input class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all shadow-2xs" placeholder="e.g. user.name" type="text" value="rajesh.kumar_ind">
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-slate-400 text-[18px]">alternate_email</span>
+</div>
+</div>
+<!-- First Name -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700 flex items-center justify-between">
+<span class="">First Name</span>
+<span class="font-mono text-[10px] text-slate-400">AS PER AADHAR</span>
+</label>
+<input class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all shadow-2xs" placeholder="Rajesh" type="text" value="Rajesh">
+</div>
+<!-- Last Name -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700">Last Name</label>
+<input class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all shadow-2xs" placeholder="Kumar" type="text" value="Kumar">
+</div>
+<!-- Date of Birth -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700">Date of Birth</label>
+<input class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all shadow-2xs" type="date" value="1989-08-14">
+</div>
+<!-- Age -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700 flex items-center justify-between">
+<span class="">Age</span>
+<span class="font-mono text-[10px] text-orange-600 font-semibold">AUTO-CALC</span>
+</label>
+<div class="flex items-center bg-slate-50 border border-slate-200 px-3.5 py-2 rounded-lg">
+<input class="w-full bg-transparent text-slate-800 font-mono text-sm outline-none font-medium" readonly="" type="number" value="35">
+<span class="font-mono text-xs text-slate-400 uppercase font-bold">Yrs</span>
+</div>
+</div>
+<!-- Place of Birth -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700">Place of Birth</label>
+<input class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all shadow-2xs" placeholder="City, State" type="text" value="Ranchi, Jharkhand">
+</div>
+<!-- Gender -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700">Gender</label>
+<select class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all cursor-pointer shadow-2xs">
+<option selected="">Male</option>
+<option>Female</option>
+<option>Non-Binary / Third Gender</option>
+<option>Prefer not to say</option>
+</select>
+</div>
+<!-- Nationality -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700">Nationality</label>
+<input class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all shadow-2xs" placeholder="e.g. Indian" type="text" value="Indian">
+</div>
+<!-- Religion -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700">Religion</label>
+<input class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all shadow-2xs" placeholder="Religion (Optional)" type="text" value="Hindu">
+</div>
+<!-- Marital Status -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700">Marital Status</label>
+<select class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all cursor-pointer shadow-2xs">
+<option selected="">Married</option>
+<option>Single</option>
+<option>Divorced</option>
+<option>Widowed</option>
+</select>
+</div>
+</div>
+</div>
+<!-- SECTION 2: Additional Identification & Contact Details -->
+<div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm flex flex-col gap-5">
+<div class="flex items-center justify-between pb-3 border-b border-slate-100">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-md bg-orange-50 border border-orange-200 text-orange-600 font-mono text-xs font-bold flex items-center justify-center">02</span>
+<h2 class="text-base font-bold text-slate-900 tracking-tight">Additional Identification &amp; Contact</h2>
+</div>
+<span class="font-mono text-xs text-orange-600 font-semibold bg-orange-50 px-2 py-0.5 rounded border border-orange-100">SEC: ID-204</span>
+</div>
+<!-- Clean Light Mode Compliance Banner -->
+<div class="flex items-center gap-3 p-3 rounded-lg bg-orange-50/70 border border-orange-200 text-orange-800">
+<span class="material-symbols-outlined text-[20px] text-orange-600 flex-shrink-0">info</span>
+<span class="text-xs leading-relaxed font-medium">Please enter statutory numbers exactly in the specified format for national engineering registry compliance.</span>
+</div>
+<!-- Identification Sub-grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+<!-- Aadhar Number -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700 flex items-center justify-between">
+<span class="">Aadhar Number</span>
+<span class="font-mono text-[10px] font-semibold text-emerald-600 bg-emerald-50 px-1.5 py-0.2 rounded border border-emerald-200">VERIFIED</span>
+</label>
+<div class="flex items-center bg-white border border-slate-300 px-3.5 py-2 rounded-lg focus-within:ring-2 focus-within:ring-orange-500/20 focus-within:border-orange-500 shadow-2xs">
+<input class="w-full bg-transparent text-slate-800 font-mono text-sm outline-none tracking-wider font-medium" maxlength="14" placeholder="XXXX-XXXX-XXXX" type="text" value="5482-9901-3412">
+<span class="material-symbols-outlined text-emerald-600 text-[18px]">verified</span>
+</div>
+</div>
+<!-- PF / UAN Number -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700 flex items-center justify-between">
+<span class="">PF / UAN Number</span>
+<span class="font-mono text-[10px] text-slate-400">EPFO</span>
+</label>
+<input class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg font-mono text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all shadow-2xs" maxlength="12" placeholder="100928374651" type="text" value="100928374651">
+</div>
+<!-- PAN Number -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700 flex items-center justify-between">
+<span class="">PAN Number</span>
+<span class="font-mono text-[10px] text-slate-400">INCOME TAX</span>
+</label>
+<input class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg font-mono text-sm uppercase placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all shadow-2xs" maxlength="10" placeholder="ABCDE1234F" type="text" value="ABCDE1234F">
+</div>
+</div>
+<!-- Contact Sub-grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-1">
+<!-- Telephone -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700">Telephone (Landline)</label>
+<input class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg font-mono text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all shadow-2xs" placeholder="0651-XXXXXXX" type="text" value="0651-2489110">
+</div>
+<!-- Mobile -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700 flex items-center justify-between">
+<span class="">Mobile (Primary)</span>
+<span class="font-mono text-[10px] text-orange-600 font-semibold">SMS ALERTS</span>
+</label>
+<input class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg font-mono text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all shadow-2xs" placeholder="+91 XXXXX XXXXX" type="tel" value="+91 98450 12044">
+</div>
+<!-- Email -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700 flex items-center justify-between">
+<span class="">Work / Corp Email</span>
+<span class="font-mono text-[10px] text-slate-400">OFFICIAL</span>
+</label>
+<input class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all shadow-2xs" placeholder="name@gssc-india.com" type="email" value="rajesh.kumar@gssc-india.com">
+</div>
+<!-- Alternate Telephone -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700">Alternate Telephone</label>
+<input class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg font-mono text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all shadow-2xs" placeholder="0651-XXXXXXX" type="text">
+</div>
+<!-- Alternate Mobile -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700">Alternate Mobile</label>
+<input class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg font-mono text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all shadow-2xs" placeholder="+91 XXXXX XXXXX" type="tel" value="+91 94310 88201">
+</div>
+<!-- Alternate Email -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700">Alternate Personal Email</label>
+<input class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all shadow-2xs" placeholder="personal@domain.com" type="email" value="rajesh.turbine.in@gmail.com">
+</div>
+</div>
+</div>
+<!-- SECTION 3: Address Details -->
+<div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm flex flex-col gap-6">
+<div class="flex items-center justify-between pb-3 border-b border-slate-100">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-md bg-orange-50 border border-orange-200 text-orange-600 font-mono text-xs font-bold flex items-center justify-center">03</span>
+<h2 class="text-base font-bold text-slate-900 tracking-tight">Address Directory</h2>
+</div>
+<span class="font-mono text-xs text-orange-600 font-semibold bg-orange-50 px-2 py-0.5 rounded border border-orange-100">SEC: LOC-302</span>
+</div>
+<!-- Present Address Form Area -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="text-xs font-bold text-slate-800 uppercase tracking-wide">Present / Operational Residence Address</span>
+<span class="font-mono text-[10px] text-slate-400 font-semibold">PRIMARY DISPATCH</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+<!-- Street Address -->
+<div class="md:col-span-3 flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700">Street / Flat / Quarters Address</label>
+<textarea class="w-full bg-white text-slate-800 border border-slate-300 p-3 rounded-lg text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all shadow-2xs resize-none" rows="2">Flat No. 402, GSSC Staff Colony, Heavy Plant Sector IV</textarea>
+</div>
+<!-- City -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700">City / District</label>
+<input class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all shadow-2xs" placeholder="Jamshedpur" type="text" value="Jamshedpur">
+</div>
+<!-- Pin Code -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700">Pin Code</label>
+<input class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg font-mono text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all shadow-2xs" maxlength="6" placeholder="831001" type="text" value="831001">
+</div>
+<!-- State -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700">State</label>
+<select class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all cursor-pointer shadow-2xs">
+<option selected="">Jharkhand</option>
+<option>West Bengal</option>
+<option>Odisha</option>
+<option>Maharashtra</option>
+<option>Karnataka</option>
+<option>Delhi NCR</option>
+</select>
+</div>
+<!-- Country -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700">Country</label>
+<select class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all cursor-pointer shadow-2xs">
+<option selected="">India</option>
+<option>Other / Deputed Overseas</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Divider & Same as Present Address Toggle -->
+<div class="p-3.5 rounded-lg bg-slate-50 border border-slate-200/80 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<input checked="" class="w-4 h-4 text-orange-600 accent-orange-500 cursor-pointer rounded border-slate-300 focus:ring-orange-500/30" id="same-address-check" type="checkbox">
+<label class="text-xs font-semibold text-slate-800 cursor-pointer select-none" for="same-address-check">
+                      Permanent Address is same as Present Address
+                    </label>
+</div>
+<span class="font-mono text-[10px] font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">SYNCHRONIZED</span>
+</div>
+<!-- Permanent Address Form Area -->
+<div class="flex flex-col gap-3 opacity-50 pointer-events-none transition-opacity" id="permanent-address-block">
+<div class="flex items-center justify-between">
+<span class="text-xs font-bold text-slate-800 uppercase tracking-wide">Permanent Legal Residence Address</span>
+<span class="font-mono text-[10px] text-slate-400 font-semibold">ORIGIN VERIFICATION</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+<div class="md:col-span-3 flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700">Street / Flat Address</label>
+<textarea class="w-full bg-white text-slate-800 border border-slate-300 p-3 rounded-lg text-sm outline-none resize-none shadow-2xs" rows="2">Flat No. 402, GSSC Staff Colony, Heavy Plant Sector IV</textarea>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700">City</label>
+<input class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg text-sm outline-none shadow-2xs" type="text" value="Jamshedpur">
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700">Pin Code</label>
+<input class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg font-mono text-sm outline-none shadow-2xs" type="text" value="831001">
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700">State</label>
+<select class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg text-sm outline-none shadow-2xs">
+<option selected="">Jharkhand</option>
+</select>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-slate-700">Country</label>
+<select class="w-full bg-white text-slate-800 border border-slate-300 px-3.5 py-2 rounded-lg text-sm outline-none shadow-2xs">
+<option selected="">India</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 4: Bottom Action Bar & Submission -->
+<div class="sticky bottom-4 z-30 bg-white/95 backdrop-blur-md rounded-xl p-4 border border-slate-200 shadow-lg flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-2.5">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="font-mono text-xs font-semibold text-slate-600">TELEMETRY REGISTRY: READY FOR DISPATCH</span>
+</div>
+<div class="flex items-center gap-3 w-full sm:w-auto justify-end">
+<!-- Save Draft Secondary Button -->
+<button class="px-5 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold transition-all border border-slate-200 shadow-xs" type="button">
+                    Save Draft
+                  </button>
+<!-- Prominent Orange Submit Button -->
+<button class="flex items-center justify-center gap-2 px-6 py-2 rounded-lg bg-orange-500 hover:bg-orange-600 active:scale-98 text-white text-xs font-bold transition-all shadow-sm" type="submit">
+<span class="material-symbols-outlined text-[18px]">task_alt</span>
+<span class="">Submit Details</span>
+</button>
+</div>
+</div>
+</form>
+</section>
+</div>
+</div>
+<script>
+        (function() {
+          const sameAddressCheck = document.getElementById('same-address-check');
+          const permBlock = document.getElementById('permanent-address-block');
+
+          if (sameAddressCheck && permBlock) {
+            sameAddressCheck.addEventListener('change', function(e) {
+              if (e.target.checked) {
+                permBlock.classList.add('opacity-50', 'pointer-events-none');
+              } else {
+                permBlock.classList.remove('opacity-50', 'pointer-events-none');
+              }
+            });
+          }
+        })();
+      </script>
+</main>
+</div>
+
+
+</body></html>
