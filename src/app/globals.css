@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Scrollbar hide for all */
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
