@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { GSSCLogoText } from "@/components/GSSCLogo";
+import { GSSCLogo } from "@/components/GSSCLogo";
 import { initialEmployees, Employee } from "@/data/employees";
 
 export default function AdminDashboardPage() {
@@ -123,7 +123,7 @@ export default function AdminDashboardPage() {
         {/* Brand */}
         <div className="h-16 px-5 border-b border-slate-100 flex items-center justify-between">
           <Link href="/">
-            <GSSCLogoText />
+            <GSSCLogo />
           </Link>
           <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-orange-100 text-orange-800">
             ADMIN
@@ -487,16 +487,14 @@ export default function AdminDashboardPage() {
                       <td className="py-3.5 px-4">
                         <div className="flex items-center gap-2">
                           <span
-                            className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-mono font-bold ${
-                              emp.status === "Active"
+                            className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-mono font-bold ${emp.status === "Active"
                                 ? "bg-emerald-100 text-emerald-800"
                                 : "bg-amber-100 text-amber-800"
-                            }`}
+                              }`}
                           >
                             <span
-                              className={`w-1.5 h-1.5 rounded-full ${
-                                emp.status === "Active" ? "bg-emerald-500" : "bg-amber-500"
-                              }`}
+                              className={`w-1.5 h-1.5 rounded-full ${emp.status === "Active" ? "bg-emerald-500" : "bg-amber-500"
+                                }`}
                             />
                             {emp.status}
                           </span>
@@ -754,11 +752,10 @@ export default function AdminDashboardPage() {
                   <div className="flex items-center gap-2">
                     <h3 className="text-lg font-bold text-slate-900">{inspectEmployee.name}</h3>
                     <span
-                      className={`text-[10px] font-mono px-2 py-0.5 rounded-full font-bold ${
-                        inspectEmployee.status === "Active"
+                      className={`text-[10px] font-mono px-2 py-0.5 rounded-full font-bold ${inspectEmployee.status === "Active"
                           ? "bg-emerald-100 text-emerald-800"
                           : "bg-amber-100 text-amber-800"
-                      }`}
+                        }`}
                     >
                       {inspectEmployee.status}
                     </span>
