@@ -24,10 +24,10 @@ export default function ContactPage() {
       <Navbar />
 
       {/* Header */}
-      <section className="pt-20 bg-white border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-8 py-16">
+      <section className="pt-16 lg:pt-20 bg-white border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
           <div className="text-xs font-mono font-bold text-orange-500 uppercase tracking-widest mb-3">Contact Us</div>
-          <h1 className="text-5xl font-black text-slate-900 mb-4 leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-4 leading-tight">
             Let&apos;s discuss your<br />next project.
           </h1>
           <p className="text-slate-500 text-sm max-w-lg leading-relaxed">
@@ -37,8 +37,8 @@ export default function ContactPage() {
       </section>
 
       {/* Content */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <section className="py-8 sm:py-12 lg:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-10">
 
           {/* Contact Info */}
           <div className="flex flex-col gap-6">

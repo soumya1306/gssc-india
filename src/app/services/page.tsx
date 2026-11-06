@@ -144,19 +144,19 @@ export default function ServicesPage() {
       <Navbar />
 
       {/* Page Header */}
-      <section className="pt-20 bg-white border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-8 py-16">
+      <section className="pt-16 lg:pt-20 bg-white border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
           {/* Breadcrumb */}
-          <nav className="flex items-center gap-2 text-xs font-mono text-slate-400 mb-8">
+          <nav className="flex items-center gap-2 text-xs font-mono text-slate-400 mb-6 sm:mb-8">
             <Link href="/" className="hover:text-orange-500 transition-colors">Home</Link>
             <span className="material-symbols-outlined text-[14px]">chevron_right</span>
             <span className="text-slate-600">Capabilities & Services</span>
           </nav>
-          <h1 className="text-5xl font-black text-slate-900 mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-6 leading-tight">
             Depth across the<br />whole build.
           </h1>
           {/* 4-metric strip */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 sm:mt-10">
             {[
               { value: "2,200+", label: "Workforce" },
               { value: "2002", label: "Since" },
@@ -173,14 +173,14 @@ export default function ServicesPage() {
       </section>
 
       {/* Sticky Filter Tabs */}
-      <div className="sticky top-20 z-30 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
-        <div className="max-w-7xl mx-auto px-8">
+      <div className="sticky top-16 lg:top-20 z-30 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-1 overflow-x-auto scrollbar-hide py-3">
             {filters.map((f) => (
               <button
                 key={f.value}
                 onClick={() => setActiveFilter(f.value)}
-                className={`whitespace-nowrap px-4 py-2 rounded text-xs font-semibold transition-colors flex items-center gap-1.5 ${
+                className={`whitespace-nowrap px-3 sm:px-4 py-1.5 sm:py-2 rounded text-xs font-semibold transition-colors flex items-center gap-1.5 ${
                   activeFilter === f.value
                     ? "bg-orange-500 text-white"
                     : "text-slate-500 hover:text-slate-800 hover:bg-slate-50"
@@ -199,8 +199,8 @@ export default function ServicesPage() {
       </div>
 
       {/* Service Cards Grid */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-8">
+      <section className="py-10 lg:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {filtered.map((s) => (
               <article key={s.num} className="bg-white rounded-xl border border-slate-100 p-7 hover:border-orange-200 hover:shadow-md transition-all group" data-category={s.category}>
@@ -240,11 +240,11 @@ export default function ServicesPage() {
       </section>
 
       {/* Editorial — Sectors */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-8">
+      <section className="py-12 lg:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-10">
             <div className="text-xs font-mono font-bold text-orange-500 uppercase tracking-widest mb-3">Sectors</div>
-            <h2 className="text-3xl font-black text-slate-900">We build across industries</h2>
+            <h2 className="text-2xl sm:text-3xl font-black text-slate-900">We build across industries</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {editorialCards.map((c) => (
@@ -261,8 +261,8 @@ export default function ServicesPage() {
       </section>
 
       {/* How We Deliver */}
-      <section className="py-20 bg-[#f8f9ff]">
-        <div className="max-w-7xl mx-auto px-8">
+      <section className="py-12 lg:py-20 bg-[#f8f9ff]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-10">
             <div className="text-xs font-mono font-bold text-orange-500 uppercase tracking-widest mb-3">Methodology</div>
             <h2 className="text-3xl font-black text-slate-900">How We Deliver</h2>

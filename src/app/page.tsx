@@ -103,11 +103,11 @@ export default function HomePage() {
     <div className="bg-surface-container-lowest font-body-md text-body-md text-on-surface antialiased min-h-screen">
       <Navbar />
 
-      <main className="w-full pt-20 bg-surface-container-lowest">
+      <main className="w-full pt-16 lg:pt-20 bg-surface-container-lowest">
         <div className="flex flex-col w-full">
           {/* HERO SECTION */}
           <section className="relative w-full overflow-hidden bg-surface-container-lowest border-b-0">
-            <div className="w-full px-margin md:px-margin-desktop pt-8 pb-16 lg:pt-14 lg:pb-24">
+            <div className="w-full px-4 sm:px-6 md:px-margin-desktop pt-8 pb-16 lg:pt-14 lg:pb-24">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
                 {/* Hero Text Content */}
                 <div className="lg:col-span-7 flex flex-col gap-6 lg:pr-8">
@@ -222,7 +222,7 @@ export default function HomePage() {
 
           {/* 01 / THE GSSC STANDARD */}
           <section id="about" className="w-full bg-surface-bright py-20 lg:py-28">
-            <div className="w-full px-margin md:px-margin-desktop">
+            <div className="w-full px-4 sm:px-6 md:px-margin-desktop">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
                 {/* Left: Narrative Column */}
                 <div className="lg:col-span-6 flex flex-col gap-5">
@@ -321,7 +321,7 @@ export default function HomePage() {
 
           {/* 02 / WHAT WE DO (CORE CAPABILITIES) */}
           <section className="w-full bg-surface-container-lowest py-20 lg:py-28">
-            <div className="w-full px-margin md:px-margin-desktop flex flex-col gap-14">
+            <div className="w-full px-4 sm:px-6 md:px-margin-desktop flex flex-col gap-14">
               {/* Section Header */}
               <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 max-w-full">
                 <div className="max-w-2xl flex flex-col gap-3">
@@ -387,7 +387,7 @@ export default function HomePage() {
 
           {/* 03 / SELECTED EXPERIENCE */}
           <section id="projects" className="w-full bg-surface-bright py-20 lg:py-28">
-            <div className="w-full px-margin md:px-margin-desktop flex flex-col gap-12">
+            <div className="w-full px-4 sm:px-6 md:px-margin-desktop flex flex-col gap-12">
               {/* Top Title and Filter Navigation */}
               <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
                 <div className="flex flex-col gap-3">
@@ -490,7 +490,7 @@ export default function HomePage() {
 
           {/* 04 / OUR NON-NEGOTIABLES */}
           <section id="standards" className="w-full bg-surface-container-lowest py-20 lg:py-28">
-            <div className="w-full px-margin md:px-margin-desktop flex flex-col gap-14">
+            <div className="w-full px-4 sm:px-6 md:px-margin-desktop flex flex-col gap-14">
               {/* Section Header */}
               <div className="max-w-2xl flex flex-col gap-3">
                 <div className="flex items-center gap-3 font-label-md text-label-md text-primary tracking-widest uppercase">
@@ -597,7 +597,7 @@ export default function HomePage() {
 
           {/* 05 / CALL TO ACTION BANNER */}
           <section className="w-full bg-surface-bright py-20 lg:py-28">
-            <div className="w-full px-margin md:px-margin-desktop">
+            <div className="w-full px-4 sm:px-6 md:px-margin-desktop">
               <div className="relative rounded-2xl bg-on-surface text-on-primary-container p-8 md:p-16 overflow-hidden shadow-2xl">
                 {/* Subtle industrial background glow */}
                 <div className="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-primary/20 blur-3xl pointer-events-none" />
