@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-fixed": "#001e2c", "surface-bright": "#f8f9ff", "on-tertiary": "#ffffff", "on-tertiary-container": "#00374d", "error": "#ba1a1a", "surface-container-lowest": "#ffffff", "inverse-on-surface": "#eaf1ff", "on-secondary": "#ffffff", "surface-dim": "#cbdbf5", "on-background": "#0b1c30", "on-error-container": "#93000a", "surface-container-high": "#dce9ff", "on-primary-fixed-variant": "#783200", "surface-container-low": "#eff4ff", "secondary-container": "#dae2fd", "outline": "#8c7164", "inverse-surface": "#213145", "on-secondary-container": "#5c647a", "primary-container": "#f97316", "inverse-primary": "#ffb690", "on-secondary-fixed": "#131b2e", "primary-fixed-dim": "#ffb690", "outline-variant": "#e0c0b1", "surface-variant": "#d3e4fe", "primary-fixed": "#ffdbca", "background": "#f8f9ff", "error-container": "#ffdad6", "surface-container-highest": "#d3e4fe", "on-primary-container": "#582200", "tertiary-fixed": "#c4e7ff", "on-primary": "#ffffff", "secondary": "#565e74", "tertiary-container": "#00a6df", "surface": "#f8f9ff", "surface-container": "#e5eeff", "on-error": "#ffffff", "on-tertiary-fixed-variant": "#004c69", "surface-tint": "#9d4300", "on-surface": "#0b1c30", "primary": "#9d4300", "on-secondary-fixed-variant": "#3f465c", "tertiary-fixed-dim": "#7bd0ff", "tertiary": "#00668a", "secondary-fixed": "#dae2fd", "on-surface-variant": "#584237", "secondary-fixed-dim": "#bec6e0", "on-primary-fixed": "#341100" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter": "1.5rem", "margin": "2rem", "space-2xl": "4rem", "space-xs": "0.25rem", "space-md": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "margin-desktop": "3rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "gutter-sm": "1rem" }, fontFamily: { "label-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "display-hero": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-mono-stat": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"] }, fontSize: { "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "600" }], "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "-0.015em", fontWeight: "600" }], "display-hero": ["56px", { lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "800" }], "headline-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "700" }], "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "headline-lg": ["36px", { lineHeight: "44px", letterSpacing: "-0.025em", fontWeight: "700" }], "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "label-mono-stat": ["11px", { lineHeight: "14px", letterSpacing: "0.08em", fontWeight: "700" }], "title-md": ["16px", { lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "600" }], "display-hero-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "800" }], "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "-0.02em", fontWeight: "600" }], "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "400" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-sm flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go Back" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back_ios_new</span></button><img alt="Pure vector SVG of GSSC INDIA (Gas &amp; Steam Solutions Company) logo with clean typographic curves, high-contrast dark slate fill, and scalable paths for web embedding." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X2L9SwY2PyBC1kFpV0BXacPLiZv_smnDCSnHALDYKRqapjCox0e7L5HIFteecb2M_QS5bWpjP8KqRRfUGuhm5eC93hqblJeqdX1xzojCYBP8H2--tmu2AIxCx6uSs5_8mJfwZLRSX8KxGpllfEPmvP22jpWlT9QP3uurawdyME4mw1F2ZtiiTpijFxlK5AOyIxhhvc0_AzltSBbQM8U5j1s-zL6UNdfqz4B-O-QEwJWg"/><h1 class="font-title-md text-title-md tracking-tight uppercase text-on-surface truncate">Public Home</h1></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Hero Section -->
+<section class="relative w-full px-gutter-sm pt-space-md pb-space-lg flex flex-col gap-space-md overflow-hidden">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-0.5 rounded-full bg-surface-container-high text-primary font-label-mono-stat text-label-mono-stat uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+      Industrial Engineering &amp; Contracting
+    </div>
+<div class="flex flex-col gap-space-xs">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight font-extrabold">
+        Trusted Expertise.<br/><span class="text-primary">Reliable Execution.</span>
+</h2>
+<p class="font-body-md text-body-md text-secondary">
+        A trusted industrial contracting partner delivering integrated engineering, electromechanical, plant maintenance, and construction services across India and the subcontinent.
+      </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-sm pt-space-xs">
+<a class="h-12 px-space-lg rounded-xl bg-primary-container text-on-primary font-title-md text-title-md flex items-center justify-center gap-space-xs shadow-md active:scale-[0.98] transition-transform" href="#services">
+<span>Explore Services</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<a class="h-12 px-space-lg rounded-xl bg-surface-container text-on-surface font-title-md text-title-md flex items-center justify-center gap-space-xs active:scale-[0.98] transition-transform" href="#contact">
+<span class="material-symbols-outlined text-[20px] text-primary">engineering</span>
+<span>Contact Engineers</span>
+</a>
+</div>
+<!-- Editorial Accent Imagery Tile -->
+<div class="relative w-full h-44 rounded-xl overflow-hidden shadow-sm mt-space-xs">
+<div class="w-full h-full bg-cover bg-center" data-alt="High angle shot of precision industrial piping and modern steam turbine mechanical installation inside a sprawling clean power plant facility in India. Dramatic warm sunlight catches copper and steel fittings, pristine atmospheric haze, engineered clarity and high contrast industrial detailing." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB2DwrBV7wK0AJNB-I2MSrjrANWMTOZyj1Ldz01CQLRylEpvzBHOAqbiirFFEgelJ2OWLHh9ZQPB3lCbOBE4lCwSTB9qvfJl01EgqzBf9x1IZkh7FobZCaCERWugljMMQa18QeuFAWvopOfndFiqVsO9xkt9JdH0tU9dywSCFoCI4b2mw8oBvOIYAK1a8uIyhf42hX-Pfwg6k7It6eGyiUfEolkI0MYx2xIpfEITTi8')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex items-end p-space-sm">
+<div class="flex items-center gap-space-xs text-inverse-on-surface">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[18px]">verified</span>
+<span class="font-label-mono-stat text-label-mono-stat uppercase">Class-1 Boiler &amp; Mechanical Licensure</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Live Plant Telemetry Metrics -->
+<section class="w-full px-gutter-sm py-space-sm">
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-xs">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface block tracking-tight">1,500+</span>
+<span class="font-label-mono-stat text-label-mono-stat uppercase text-secondary">Skilled Workforce</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-xs">
+<span class="material-symbols-outlined text-[20px]">history_edu</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface block tracking-tight">2002</span>
+<span class="font-label-mono-stat text-label-mono-stat uppercase text-secondary">Year Founded</span>
+</div>
+</div>
+<div class="col-span-2 bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[24px]">gavel</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">100%</span>
+<span class="font-label-mono-stat text-label-mono-stat uppercase text-secondary">Statutory Compliance</span>
+</div>
+</div>
+<span class="px-space-sm py-1 bg-surface-container-high rounded-full font-label-mono-stat text-label-mono-stat text-on-secondary-fixed-variant uppercase">Audited</span>
+</div>
+</div>
+</section>
+<!-- Capability Pillars Carousel/List -->
+<section class="w-full px-gutter-sm pt-space-lg pb-space-md flex flex-col gap-space-md" id="services">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono-stat text-label-mono-stat uppercase text-primary tracking-wider">Industrial Capabilities</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Turnkey Solutions</h3>
+</div>
+<span class="font-label-mono-stat text-label-mono-stat text-secondary">05 Segments</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- 1. Operation & Maintenance -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">precision_manufacturing</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono-stat text-label-mono-stat">24/7 SLA</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md font-bold text-on-surface">Operation &amp; Maintenance</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Continuous uptime assurance, preventive overhauls, shut-down executions, and thermodynamic asset life extension.</p>
+</div>
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md pt-space-xs">
+<span>Explore protocols</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+<!-- 2. Plant & Machinery Installation -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">settings_suggest</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono-stat text-label-mono-stat">Heavy Rigging</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md font-bold text-on-surface">Plant &amp; Machinery Installation</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Millwright assembly, turbine placement, compressor stations, and laser-guided static alignment for capital equipment.</p>
+</div>
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md pt-space-xs">
+<span>Explore protocols</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+<!-- 3. Civil Works -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[22px]">foundation</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono-stat text-label-mono-stat">Structural</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md font-bold text-on-surface">Civil Works</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Reinforced concrete foundations, drainage systems, vibration-isolated equipment pedestals, and industrial grade flooring.</p>
+</div>
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md pt-space-xs">
+<span>Explore protocols</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+<!-- 4. Electrical & Instrumentation -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">bolt</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono-stat text-label-mono-stat">Automation</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md font-bold text-on-surface">Electrical &amp; Instrumentation</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-1">HT/LT sub-stations, PLC cablings, telemetry sensor loops, calibration services, and hazardous-area compliance.</p>
+</div>
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md pt-space-xs">
+<span>Explore protocols</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+<!-- 5. Steel Fabrication -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[22px]">carpenter</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono-stat text-label-mono-stat">ASME Code</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md font-bold text-on-surface">Steel Fabrication</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Custom piping spools, ductworks, pipe-rack infrastructures, pressure vessels, and radiographic-tested weldments.</p>
+</div>
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md pt-space-xs">
+<span>Explore protocols</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Project Snapshot Showcase -->
+<section class="w-full px-gutter-sm py-space-md">
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-mono-stat text-label-mono-stat text-primary uppercase">On-Site Execution</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">Subcontinent Footprint</h4>
+</div>
+<div class="relative w-full h-48 rounded-xl overflow-hidden shadow-sm">
+<div class="w-full h-full bg-cover bg-center" data-alt="Indian petrochemical refinery at dawn with heavy steel structural towers and steam pipelines running across sprawling plant terrain. Expert industrial technicians with high visibility vests and safety gear inspecting pressure gauges and valves in golden hour ambient warmth." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBj-bWr0dyqUuMaD128lVX2LAqHvvyzGc4dZNhMAZSnk6z-R3jdRmXEmEljgtwEutMm7Bg3wf9cs-XvPsbNTsOw8KMe4X24-A4AGozDaJlLWf4xwh2-L45eTAT-LbJePiopLuKdZd0UCONNfYQfbp-bsIjUhN5D_ppG2PIYZYUkeaXJezoiescZtu1chMeoe0_mDWTMjNNSNXWZqtKQIYAaxY8aWrsp9jXfp3zDnKxH')"></div>
+<div class="absolute top-space-sm right-space-sm bg-surface-container-lowest/90 px-space-sm py-1 rounded font-label-mono-stat text-label-mono-stat text-on-surface">
+          PAN-INDIA SITES
+        </div>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold">120+ Active Projects</span>
+<span class="font-body-sm text-body-sm text-secondary">Fertilizers, Power, Steel &amp; Refining</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">map</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Commitment Triad: Quality, Safety, Partnership -->
+<section class="w-full px-gutter-sm py-space-md flex flex-col gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-mono-stat text-label-mono-stat uppercase text-primary tracking-wider">The GSSC Standard</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Core Commitments</h3>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container shrink-0 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-title-md text-title-md font-bold text-on-surface">Quality Commitment</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Rigorous QA/QC protocols, zero-defect machining inspections, and full material traceability at every phase.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container shrink-0 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">health_and_safety</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-title-md text-title-md font-bold text-on-surface">Safety First (HSE)</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Zero-Harm philosophy with continuous risk assessments, tool-box talks, and strict international PPE adherence.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container shrink-0 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">handshake</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-title-md text-title-md font-bold text-on-surface">Enduring Partnership</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Decade-long associations built on ethical transparency, fast mobilization, and relentless project delivery timelines.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Contact / Inquire Card -->
+<section class="w-full px-gutter-sm py-space-md" id="contact">
+<div class="bg-surface-container-high p-space-md rounded-xl flex flex-col gap-space-md shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-mono-stat text-label-mono-stat uppercase text-primary tracking-wider">Fast Engagement</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">Mobilize Engineering Teams</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Connect with our regional engineering desks for turnkey bids, plant overhauls, or fabrication inquiries.</p>
+</div>
+<div class="flex flex-col gap-space-xs">
+<a class="h-12 px-space-md rounded-xl bg-surface-container-lowest text-on-surface font-title-md text-title-md flex items-center justify-between shadow-sm active:bg-surface-container transition-colors" href="mailto:info@gssc.in">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">mail</span>
+<span>info@gssc.in</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[18px]">open_in_new</span>
+</a>
+<a class="h-12 px-space-md rounded-xl bg-surface-container-lowest text-on-surface font-title-md text-title-md flex items-center justify-between shadow-sm active:bg-surface-container transition-colors" href="tel:+911145000000">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">call</span>
+<span>+91 Central Desk</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[18px]">chevron_right</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Mobile Footer -->
+<footer class="w-full px-gutter-sm pt-space-lg pb-space-xl bg-surface-container-lowest flex flex-col gap-space-lg mt-space-md shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<img alt="GSSC INDIA Official Logo vector representation" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X2L9SwY2PyBC1kFpV0BXacPLiZv_smnDCSnHALDYKRqapjCox0e7L5HIFteecb2M_QS5bWpjP8KqRRfUGuhm5eC93hqblJeqdX1xzojCYBP8H2--tmu2AIxCx6uSs5_8mJfwZLRSX8KxGpllfEPmvP22jpWlT9QP3uurawdyME4mw1F2ZtiiTpijFxlK5AOyIxhhvc0_AzltSBbQM8U5j1s-zL6UNdfqz4B-O-QEwJWg"/>
+<span class="font-title-md text-title-md font-bold text-on-surface">GSSC INDIA</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+        Gas &amp; Steam Solutions Company India. Leading electromechanical and heavy industrial infrastructure contractors.
+      </p>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-mono-stat text-label-mono-stat uppercase text-on-surface font-bold">Services</span>
+<a class="font-body-sm text-body-sm text-secondary hover:text-primary" href="#services">O&amp;M Contracts</a>
+<a class="font-body-sm text-body-sm text-secondary hover:text-primary" href="#services">Plant Erection</a>
+<a class="font-body-sm text-body-sm text-secondary hover:text-primary" href="#services">Civil Foundations</a>
+<a class="font-body-sm text-body-sm text-secondary hover:text-primary" href="#services">Instrumentation</a>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-mono-stat text-label-mono-stat uppercase text-on-surface font-bold">Organization</span>
+<a class="font-body-sm text-body-sm text-secondary hover:text-primary" href="#">Safety Policy</a>
+<a class="font-body-sm text-body-sm text-secondary hover:text-primary" href="#">Compliance</a>
+<a class="font-body-sm text-body-sm text-secondary hover:text-primary" href="#">Leadership</a>
+<a class="font-body-sm text-body-sm text-secondary hover:text-primary" href="mailto:info@gssc.in">info@gssc.in</a>
+</div>
+</div>
+<div class="pt-space-sm flex flex-col gap-1">
+<span class="font-label-mono-stat text-label-mono-stat text-secondary">
+        © 2024 GSSC INDIA. All rights reserved.
+      </span>
+<span class="font-label-mono-stat text-label-mono-stat text-secondary/70">
+        Registered Industrial Contracting Entity • ISO 9001 / OHSAS Compliant
+      </span>
+</div>
+</footer>
+</div>
+<script>
+  // Micro-interaction: Active ripple on buttons & cards
+  document.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('touchstart', () => {
+      el.style.opacity = '0.92';
+    }, {passive: true});
+    el.addEventListener('touchend', () => {
+      el.style.opacity = '1';
+    }, {passive: true});
+  });
+</script></main></body></html>

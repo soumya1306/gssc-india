@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-fixed": "#001e2c", "surface-bright": "#f8f9ff", "on-tertiary": "#ffffff", "on-tertiary-container": "#00374d", "error": "#ba1a1a", "surface-container-lowest": "#ffffff", "inverse-on-surface": "#eaf1ff", "on-secondary": "#ffffff", "surface-dim": "#cbdbf5", "on-background": "#0b1c30", "on-error-container": "#93000a", "surface-container-high": "#dce9ff", "on-primary-fixed-variant": "#783200", "surface-container-low": "#eff4ff", "secondary-container": "#dae2fd", "outline": "#8c7164", "inverse-surface": "#213145", "on-secondary-container": "#5c647a", "primary-container": "#f97316", "inverse-primary": "#ffb690", "on-secondary-fixed": "#131b2e", "primary-fixed-dim": "#ffb690", "outline-variant": "#e0c0b1", "surface-variant": "#d3e4fe", "primary-fixed": "#ffdbca", "background": "#f8f9ff", "error-container": "#ffdad6", "surface-container-highest": "#d3e4fe", "on-primary-container": "#582200", "tertiary-fixed": "#c4e7ff", "on-primary": "#ffffff", "secondary": "#565e74", "tertiary-container": "#00a6df", "surface": "#f8f9ff", "surface-container": "#e5eeff", "on-error": "#ffffff", "on-tertiary-fixed-variant": "#004c69", "surface-tint": "#9d4300", "on-surface": "#0b1c30", "primary": "#9d4300", "on-secondary-fixed-variant": "#3f465c", "tertiary-fixed-dim": "#7bd0ff", "tertiary": "#00668a", "secondary-fixed": "#dae2fd", "on-surface-variant": "#584237", "secondary-fixed-dim": "#bec6e0", "on-primary-fixed": "#341100" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter": "1.5rem", "margin": "2rem", "space-2xl": "4rem", "space-xs": "0.25rem", "space-md": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "margin-desktop": "3rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "gutter-sm": "1rem" }, fontFamily: { "label-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "display-hero": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-mono-stat": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"] }, fontSize: { "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "600" }], "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "-0.015em", fontWeight: "600" }], "display-hero": ["56px", { lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "800" }], "headline-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "700" }], "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "headline-lg": ["36px", { lineHeight: "44px", letterSpacing: "-0.025em", fontWeight: "700" }], "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "label-mono-stat": ["11px", { lineHeight: "14px", letterSpacing: "0.08em", fontWeight: "700" }], "title-md": ["16px", { lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "600" }], "display-hero-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "800" }], "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "-0.02em", fontWeight: "600" }], "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "400" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-sm flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go Back" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back_ios_new</span></button><img alt="Pure vector SVG of GSSC INDIA (Gas &amp; Steam Solutions Company) logo with clean typographic curves, high-contrast dark slate fill, and scalable paths for web embedding." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X2L9SwY2PyBC1kFpV0BXacPLiZv_smnDCSnHALDYKRqapjCox0e7L5HIFteecb2M_QS5bWpjP8KqRRfUGuhm5eC93hqblJeqdX1xzojCYBP8H2--tmu2AIxCx6uSs5_8mJfwZLRSX8KxGpllfEPmvP22jpWlT9QP3uurawdyME4mw1F2ZtiiTpijFxlK5AOyIxhhvc0_AzltSBbQM8U5j1s-zL6UNdfqz4B-O-QEwJWg"/><h1 class="font-title-md text-title-md tracking-tight uppercase text-on-surface truncate">Public Contact</h1></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full">
+<section class="px-gutter-sm pt-space-md pb-space-lg flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-block w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-mono-stat text-label-mono-stat uppercase tracking-wider text-primary">Technical Dispatch &amp; Support</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-extrabold tracking-tight">
+      Let’s make the next project count.
+    </h2>
+<p class="font-body-md text-body-md text-secondary">
+      Connect with our regional engineering dispatch team for plant turnarounds, thermodynamic audits, and precision line installations.
+    </p>
+</section>
+<!-- Quick Action Strip -->
+<section class="px-gutter-sm pb-space-lg">
+<div class="grid grid-cols-3 gap-space-xs">
+<a class="flex flex-col items-center justify-center p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container active:scale-95 transition-all text-center" href="tel:+912249882000">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center mb-space-xs">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</div>
+<span class="font-label-mono-stat text-label-mono-stat uppercase text-on-surface">Voice Line</span>
+<span class="font-label-md text-label-md text-secondary truncate w-full mt-0.5">+91 22 4988</span>
+</a>
+<a class="flex flex-col items-center justify-center p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container active:scale-95 transition-all text-center" href="mailto:contact@gssc-india.com">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center mb-space-xs">
+<span class="material-symbols-outlined text-[20px]">mark_email_read</span>
+</div>
+<span class="font-label-mono-stat text-label-mono-stat uppercase text-on-surface">Official Desk</span>
+<span class="font-label-md text-label-md text-secondary truncate w-full mt-0.5">contact@</span>
+</a>
+<a class="flex flex-col items-center justify-center p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container active:scale-95 transition-all text-center relative overflow-hidden" href="tel:18002008899">
+<span class="absolute top-1.5 right-1.5 flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center mb-space-xs">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+<span class="font-label-mono-stat text-label-mono-stat uppercase text-on-surface">24/7 Rapid</span>
+<span class="font-label-md text-label-md text-primary font-bold mt-0.5">Emergency</span>
+</a>
+</div>
+</section>
+<!-- Technical Inquiry Form -->
+<section class="px-gutter-sm pb-space-xl">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-mono-stat text-label-mono-stat uppercase tracking-wider text-secondary">Telemetry Inquiry Gateway</span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Project Dispatch Request</h3>
+</div>
+<div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</div>
+</div>
+<form class="flex flex-col gap-space-md" id="dispatchForm" onsubmit="event.preventDefault(); triggerSubmitConfirmation();">
+<!-- Full Name -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-mono-stat text-label-mono-stat uppercase text-secondary" for="fullName">Engineer / Authorized Signatory *</label>
+<div class="relative flex items-center">
+<input class="w-full h-12 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg px-space-md focus:bg-surface-container-lowest focus:outline-none transition-colors" id="fullName" placeholder="e.g. Rajesh Vardhan" required="" type="text"/>
+<span class="material-symbols-outlined absolute right-3 text-secondary text-[20px] pointer-events-none">badge</span>
+</div>
+</div>
+<!-- Organization / PSU / Plant -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-mono-stat text-label-mono-stat uppercase text-secondary" for="plantUnit">Plant / PSU / Organization *</label>
+<div class="relative flex items-center">
+<input class="w-full h-12 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg px-space-md focus:bg-surface-container-lowest focus:outline-none transition-colors" id="plantUnit" placeholder="e.g. NTPC Dadri Unit IV or RIL Dahej" required="" type="text"/>
+<span class="material-symbols-outlined absolute right-3 text-secondary text-[20px] pointer-events-none">factory</span>
+</div>
+</div>
+<!-- Contact Grid -->
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-mono-stat text-label-mono-stat uppercase text-secondary" for="workEmail">Official Work Email *</label>
+<div class="relative flex items-center">
+<input class="w-full h-12 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg px-space-md focus:bg-surface-container-lowest focus:outline-none transition-colors" id="workEmail" placeholder="name@corporation.com" required="" type="email"/>
+<span class="material-symbols-outlined absolute right-3 text-secondary text-[20px] pointer-events-none">mail</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-mono-stat text-label-mono-stat uppercase text-secondary" for="contactPhone">Contact Phone (+91) *</label>
+<div class="relative flex items-center">
+<span class="absolute left-3 font-label-mono-stat text-label-mono-stat text-secondary select-none">+91</span>
+<input class="w-full h-12 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg pl-12 pr-space-md focus:bg-surface-container-lowest focus:outline-none transition-colors" id="contactPhone" placeholder="98200 XXXXX" required="" type="tel"/>
+<span class="material-symbols-outlined absolute right-3 text-secondary text-[20px] pointer-events-none">phone_iphone</span>
+</div>
+</div>
+</div>
+<!-- Sector Selector Chips -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-mono-stat text-label-mono-stat uppercase text-secondary">Project Sector *</span>
+<div class="grid grid-cols-2 gap-space-xs" id="sectorGroup">
+<button class="sector-chip flex items-center justify-between px-space-sm py-space-sm rounded-lg bg-surface-container-high text-on-surface transition-all active:scale-95 text-left" onclick="selectSector(this, 'Power &amp; Utilities')" type="button">
+<span class="font-label-md text-label-md">Power &amp; Utilities</span>
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+</button>
+<button class="sector-chip flex items-center justify-between px-space-sm py-space-sm rounded-lg bg-surface-container-low text-secondary transition-all active:scale-95 text-left" onclick="selectSector(this, 'Petrochemical')" type="button">
+<span class="font-label-md text-label-md">Petrochemical</span>
+<span class="material-symbols-outlined text-[16px] opacity-0">check_circle</span>
+</button>
+<button class="sector-chip flex items-center justify-between px-space-sm py-space-sm rounded-lg bg-surface-container-low text-secondary transition-all active:scale-95 text-left" onclick="selectSector(this, 'Cement')" type="button">
+<span class="font-label-md text-label-md">Cement</span>
+<span class="material-symbols-outlined text-[16px] opacity-0">check_circle</span>
+</button>
+<button class="sector-chip flex items-center justify-between px-space-sm py-space-sm rounded-lg bg-surface-container-low text-secondary transition-all active:scale-95 text-left" onclick="selectSector(this, 'Fertilizer')" type="button">
+<span class="font-label-md text-label-md">Fertilizer</span>
+<span class="material-symbols-outlined text-[16px] opacity-0">check_circle</span>
+</button>
+</div>
+<input id="selectedSectorInput" type="hidden" value="Power &amp; Utilities"/>
+</div>
+<!-- Message / Scope -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-mono-stat text-label-mono-stat uppercase text-secondary" for="auditScope">Thermodynamic / Line Audit Scope</label>
+<textarea class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg p-space-md focus:bg-surface-container-lowest focus:outline-none transition-colors resize-none" id="auditScope" placeholder="Outline pipe specification, operating pressure (BAR), media temperature, or valve assembly repair..." rows="3"></textarea>
+</div>
+<!-- Submit Button -->
+<button class="h-14 w-full bg-primary-container text-on-primary font-title-md text-title-md font-bold rounded-lg shadow-md flex items-center justify-center gap-space-sm active:scale-[0.99] transition-transform" id="submitBtn" type="submit">
+<span>Send Engineering Inquiry</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<div class="hidden p-space-sm rounded-lg bg-surface-container flex items-center gap-space-xs text-on-surface" id="confirmationNotice">
+<span class="material-symbols-outlined text-primary text-[20px]">task_alt</span>
+<span class="font-label-md text-label-md">Dispatch ticket generated. Engineering lead notified within 15 min.</span>
+</div>
+</form>
+</div>
+</section>
+<!-- Visual Asset: Regional Control Room -->
+<section class="px-gutter-sm pb-space-lg">
+<div class="relative rounded-xl overflow-hidden shadow-sm bg-surface-container-low">
+<img class="w-full h-44 object-cover" data-alt="A cutting-edge industrial gas and steam monitoring control room in India with high-contrast amber digital telemetry displays, structural steel architecture, mechanical pipe pressure gauges, clean engineering workstations, natural daylight, photorealistic professional architectural photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHuuSOWSIimmyifKbbVO4KxJ-yjHcGAZXIx8Stva-zojAo8d59solnL0-qpDPqbnXOuZhmF1LE0Qxd16e6dXAPpm_PVKnmEuFh41yB6Q-D1D3suG1r3HoqGPH9L2B9xvmpvbD7ilZjarP-14V2_rQCTEkyKxOsXaLeGVPMw9yCTQ_NPSDFpnYE7IK0TJ0dzIuWXXVJXBB0wLw3tTOzP9pATPNmWimwlHbD8nOXYYSo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex flex-col justify-end p-space-md">
+<span class="font-label-mono-stat text-label-mono-stat uppercase text-primary-fixed">National Dispatch Hubs</span>
+<h4 class="font-title-md text-title-md text-inverse-on-surface font-bold">Strategic Plant Proximity Across India</h4>
+</div>
+</div>
+</section>
+<!-- Regional Hub Directory Cards -->
+<section class="px-gutter-sm pb-space-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-mono-stat text-label-mono-stat uppercase tracking-wider text-secondary">Active Regional Depots</span>
+<span class="font-label-mono-stat text-label-mono-stat uppercase text-primary">3 Locations Active</span>
+</div>
+<!-- Hub 1: Hazira Surat -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-mono-stat text-label-mono-stat uppercase text-primary">West Zone Depot 01</span>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Hazira Logistics &amp; Turbine Hub</h4>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-mono-stat text-label-mono-stat">GUJARAT</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+        Plot 44-B, Heavy Engineering Industrial Zone, Near Port Approach, Hazira, Surat, Gujarat 394270
+      </p>
+<div class="flex items-center gap-space-md pt-space-xs text-on-surface">
+<div class="flex items-center gap-1 font-label-md text-label-md text-secondary">
+<span class="material-symbols-outlined text-[16px] text-primary">speed</span>
+<span>45m Response Corridor</span>
+</div>
+<div class="flex items-center gap-1 font-label-md text-label-md text-secondary">
+<span class="material-symbols-outlined text-[16px] text-tertiary">inventory</span>
+<span>Spares Yard Active</span>
+</div>
+</div>
+<div class="w-full h-24 bg-surface-container-low rounded-lg mt-space-xs bg-cover bg-center" data-location="Hazira, Surat, Gujarat, India" style=""></div>
+</div>
+<!-- Hub 2: Navi Mumbai -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-mono-stat text-label-mono-stat uppercase text-primary">Central Engineering HQ</span>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Navi Mumbai Technical Center</h4>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-mono-stat text-label-mono-stat">MAHARASHTRA</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+        Unit 802, Industrial Apex Towers, TTC MIDC Zone, Mahape, Navi Mumbai, Maharashtra 400710
+      </p>
+<div class="flex items-center gap-space-md pt-space-xs text-on-surface">
+<div class="flex items-center gap-1 font-label-md text-label-md text-secondary">
+<span class="material-symbols-outlined text-[16px] text-primary">engineering</span>
+<span>Lead Audit Division</span>
+</div>
+<div class="flex items-center gap-1 font-label-md text-label-md text-secondary">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+<span>ISO 9001 Certified Lab</span>
+</div>
+</div>
+<div class="w-full h-24 bg-surface-container-low rounded-lg mt-space-xs bg-cover bg-center" data-location="Navi Mumbai, Maharashtra, India" style=""></div>
+</div>
+<!-- Hub 3: Dahej Gujarat -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-mono-stat text-label-mono-stat uppercase text-primary">Petrochem Quick-Reaction</span>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Dahej PCPIR Service Station</h4>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-mono-stat text-label-mono-stat">GUJARAT</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+        Special Investment Region (PCPIR), Sector 12-A, Dahej, Bharuch District, Gujarat 392130
+      </p>
+<div class="flex items-center gap-space-md pt-space-xs text-on-surface">
+<div class="flex items-center gap-1 font-label-md text-label-md text-secondary">
+<span class="material-symbols-outlined text-[16px] text-primary">local_shipping</span>
+<span>Mobile Rig Units: 6</span>
+</div>
+<div class="flex items-center gap-1 font-label-md text-label-md text-secondary">
+<span class="material-symbols-outlined text-[16px] text-tertiary">hvac</span>
+<span>Steam Calibration Ready</span>
+</div>
+</div>
+<div class="w-full h-24 bg-surface-container-low rounded-lg mt-space-xs bg-cover bg-center" data-location="Dahej, Gujarat, India" style=""></div>
+</div>
+</section>
+<!-- Mobile Footer -->
+<footer class="bg-surface-container px-gutter-sm py-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-[14px]">precision_manufacturing</span>
+</div>
+<span class="font-title-md text-title-md font-bold tracking-tight text-on-surface">GSSC INDIA</span>
+</div>
+<span class="font-label-mono-stat text-label-mono-stat uppercase text-secondary">Est. 2011 • ISO 14001</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+      Gas &amp; Steam Solutions Company (GSSC) India Private Limited. Industrial thermodynamics, pipeline rehabilitation, valves, and energy optimization.
+    </p>
+<div class="flex flex-wrap gap-x-space-md gap-y-space-xs pt-space-xs">
+<span class="font-label-mono-stat text-label-mono-stat uppercase text-on-surface">CIN: U28113MH2011PTC219488</span>
+<span class="font-label-mono-stat text-label-mono-stat uppercase text-on-surface">GSTIN: 27AABCG5521M1ZX</span>
+</div>
+<div class="pt-space-xs flex items-center justify-between text-secondary">
+<span class="font-label-mono-stat text-label-mono-stat">© 2025 GSSC INDIA</span>
+<div class="flex items-center gap-space-md">
+<a class="font-label-mono-stat text-label-mono-stat uppercase hover:text-primary transition-colors" href="#privacy">Privacy</a>
+<a class="font-label-mono-stat text-label-mono-stat uppercase hover:text-primary transition-colors" href="#compliance">Compliance</a>
+</div>
+</div>
+</footer>
+</div>
+<script>
+  function selectSector(buttonElement, sectorName) {
+    const parent = document.getElementById('sectorGroup');
+    const buttons = parent.querySelectorAll('.sector-chip');
+    buttons.forEach((btn) => {
+      btn.className = 'sector-chip flex items-center justify-between px-space-sm py-space-sm rounded-lg bg-surface-container-low text-secondary transition-all active:scale-95 text-left';
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (icon) {
+        icon.className = 'material-symbols-outlined text-[16px] opacity-0';
+      }
+    });
+
+    buttonElement.className = 'sector-chip flex items-center justify-between px-space-sm py-space-sm rounded-lg bg-surface-container-high text-on-surface transition-all active:scale-95 text-left';
+    const activeIcon = buttonElement.querySelector('.material-symbols-outlined');
+    if (activeIcon) {
+      activeIcon.className = 'material-symbols-outlined text-[16px] text-primary';
+    }
+
+    document.getElementById('selectedSectorInput').value = sectorName;
+  }
+
+  function triggerSubmitConfirmation() {
+    const submitBtn = document.getElementById('submitBtn');
+    const notice = document.getElementById('confirmationNotice');
+    submitBtn.innerHTML = '<span>Processing Request...</span>';
+    submitBtn.classList.add('opacity-75');
+
+    setTimeout(() => {
+      submitBtn.innerHTML = '<span>Inquiry Dispatched</span><span class="material-symbols-outlined text-[20px]">check</span>';
+      submitBtn.classList.remove('opacity-75');
+      notice.classList.remove('hidden');
+    }, 600);
+  }
+</script></main></body></html>
