@@ -19,7 +19,7 @@ export function Navbar() {
       <div className="h-20 w-full px-margin-desktop flex items-center justify-between">
         <Link href="/" className="flex items-center gap-space-sm group">
           <div className="flex items-center select-none">
-            <GSSCLogo className="h-10 w-auto" />
+            <GSSCLogo className="h-14 w-auto" />
           </div>
         </Link>
 
@@ -29,18 +29,17 @@ export function Navbar() {
               link.path === "services"
                 ? pathname.startsWith("/services")
                 : link.path === "contact"
-                ? pathname.startsWith("/contact")
-                : false;
+                  ? pathname.startsWith("/contact")
+                  : false;
 
             return (
               <Link
                 key={link.path}
                 href={link.href}
-                className={`font-body-md text-body-md transition-colors py-space-xs ${
-                  isActive
-                    ? "text-primary font-bold"
-                    : "text-on-surface-variant hover:text-on-surface"
-                }`}
+                className={`font-body-md text-body-md transition-colors py-space-xs ${isActive
+                  ? "text-primary font-bold"
+                  : "text-on-surface-variant hover:text-on-surface"
+                  }`}
               >
                 {link.label}
               </Link>
