@@ -70,8 +70,8 @@ export default function EmployeePortalPage() {
 
   return (
     <div className="min-h-screen bg-[#f8fafc] text-slate-800 flex">
-      {/* Left Sidebar */}
-      <aside className="w-64 bg-white border-r border-slate-200/90 flex flex-col fixed inset-y-0 left-0 z-30 shadow-xs">
+      {/* Left Sidebar (Desktop) */}
+      <aside className="hidden lg:flex w-64 bg-white border-r border-slate-200/90 flex-col fixed inset-y-0 left-0 z-30 shadow-xs">
         {/* Brand */}
         <div className="h-16 px-5 border-b border-slate-100 flex items-center justify-between">
           <Link href="/">
@@ -174,45 +174,73 @@ export default function EmployeePortalPage() {
       </aside>
 
       {/* Main Container */}
-      <div className="flex-1 ml-64 flex flex-col min-h-screen">
+      <div className="flex-1 ml-0 lg:ml-64 flex flex-col min-h-screen">
         {/* Fixed Top Header */}
-        <header className="h-16 bg-white/95 backdrop-blur-md border-b border-slate-200/90 fixed top-0 right-0 left-64 z-20 px-8 flex items-center justify-between shadow-xs">
-          <div className="flex items-center gap-3">
-            <div className="px-2 py-0.5 rounded bg-orange-100 text-orange-800 text-[11px] font-mono font-bold uppercase tracking-wider">
+        <header className="h-16 bg-white/95 backdrop-blur-md border-b border-slate-200/90 fixed top-0 right-0 left-0 lg:left-64 z-20 px-4 sm:px-6 lg:px-8 flex items-center justify-between shadow-xs">
+          <div className="flex items-center gap-2.5 sm:gap-3">
+            <Link href="/" className="lg:hidden flex items-center shrink-0">
+              <GSSCLogo className="h-8 w-auto" />
+            </Link>
+            <div className="hidden sm:inline-block px-2 py-0.5 rounded bg-orange-100 text-orange-800 text-[11px] font-mono font-bold uppercase tracking-wider">
               PORTAL
             </div>
             <div>
-              <h1 className="text-sm font-bold text-slate-900">Employee Operational Profile</h1>
-              <p className="text-[11px] font-mono text-slate-400">Station 04 - Hazira High-Pressure Unit</p>
+              <h1 className="text-xs sm:text-sm font-bold text-slate-900 truncate">Employee Profile</h1>
+              <p className="text-[10px] sm:text-[11px] font-mono text-slate-400 truncate">Hazira Unit · IND-4089</p>
             </div>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4">
             <div className="hidden md:flex items-center gap-2 px-2.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-mono font-medium">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
               <span>Shift: General / Plant Online</span>
             </div>
 
-            <div className="flex items-center gap-2 pl-3 border-l border-slate-200">
+            <div className="flex items-center gap-2 pl-2 sm:pl-3 border-l border-slate-200">
               <button
                 type="button"
-                className="w-9 h-9 rounded-lg hover:bg-slate-100 text-slate-600 flex items-center justify-center relative"
+                className="w-8 sm:w-9 h-8 sm:h-9 rounded-lg hover:bg-slate-100 text-slate-600 flex items-center justify-center relative"
+                aria-label="Alerts"
               >
-                <span className="material-symbols-outlined text-[20px]">notifications</span>
-                <span className="w-2 h-2 rounded-full bg-orange-500 absolute top-2 right-2 ring-2 ring-white" />
+                <span className="material-symbols-outlined text-[18px] sm:text-[20px]">notifications</span>
+                <span className="w-2 h-2 rounded-full bg-orange-500 absolute top-1.5 right-1.5 ring-2 ring-white" />
               </button>
               <Link
                 href="/"
                 className="text-xs font-semibold text-slate-500 hover:text-orange-600 px-2 py-1"
               >
-                Public Site
+                Home
               </Link>
             </div>
           </div>
         </header>
 
         {/* Content Body */}
-        <main className="p-8 pt-24 pb-28 flex-1 max-w-6xl w-full mx-auto space-y-6">
+        <main className="p-4 sm:p-6 lg:p-8 pt-20 lg:pt-24 pb-28 flex-1 max-w-6xl w-full mx-auto space-y-6">
+          {/* Mobile Tab Selector Pill Bar */}
+          <div className="lg:hidden flex items-center gap-1.5 overflow-x-auto scrollbar-hide pb-1">
+            {[
+              { id: "details", label: "Profile", icon: "badge" },
+              { id: "docs", label: "Documents", icon: "folder_shared" },
+              { id: "notifications", label: "Alerts", icon: "notifications" },
+              { id: "payments", label: "Comp & PF", icon: "payments" },
+              { id: "safety", label: "HSE Permits", icon: "security" },
+              { id: "help", label: "Help Desk", icon: "support_agent" },
+            ].map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className={`whitespace-nowrap px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1 transition ${
+                  activeTab === tab.id
+                    ? "bg-orange-500 text-white shadow-xs"
+                    : "bg-white border border-slate-200 text-slate-600 hover:bg-slate-50"
+                }`}
+              >
+                <span className="material-symbols-outlined text-[16px]">{tab.icon}</span>
+                <span>{tab.label}</span>
+              </button>
+            ))}
+          </div>
           {savedMessage && (
             <div className="bg-emerald-50 border border-emerald-200 text-emerald-800 px-4 py-3 rounded-xl flex items-center gap-3 text-sm animate-fade-in shadow-xs">
               <span className="material-symbols-outlined text-emerald-600">check_circle</span>
@@ -738,8 +766,8 @@ export default function EmployeePortalPage() {
           </div>
         </main>
 
-        {/* Sticky Bottom Action Bar */}
-        <div className="fixed bottom-0 right-0 left-64 bg-white/95 backdrop-blur-md border-t border-slate-200/90 py-3.5 px-8 z-20 flex items-center justify-between shadow-lg">
+        {/* Sticky Bottom Action Bar (Desktop) */}
+        <div className="hidden lg:flex fixed bottom-0 right-0 left-64 bg-white/95 backdrop-blur-md border-t border-slate-200/90 py-3.5 px-8 z-20 items-center justify-between shadow-lg">
           <div className="flex items-center gap-3">
             <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
             <span className="text-xs font-mono text-slate-500">
@@ -765,6 +793,51 @@ export default function EmployeePortalPage() {
             </button>
           </div>
         </div>
+
+        {/* Mobile Sticky Action Strip */}
+        <div className="lg:hidden p-4 bg-white border-t border-slate-200/90 flex items-center justify-between gap-3 shadow-md">
+          <button
+            type="button"
+            onClick={() => handleSave("draft")}
+            className="flex-1 py-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 text-xs font-bold text-slate-700 transition"
+          >
+            Save Draft
+          </button>
+          <button
+            type="button"
+            onClick={() => handleSave("submit")}
+            className="flex-1 py-2.5 rounded-lg bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold shadow-sm shadow-orange-500/20 inline-flex items-center justify-center gap-1.5 transition"
+          >
+            <span className="material-symbols-outlined text-[16px]">cloud_upload</span>
+            <span>Submit KYC</span>
+          </button>
+        </div>
+
+        {/* Mobile Bottom Navigation Bar */}
+        <nav className="lg:hidden fixed bottom-0 left-0 right-0 z-40 pb-safe bg-white/95 backdrop-blur-xl border-t border-slate-200/90 shadow-[0_-1px_12px_rgba(0,0,0,0.06)]">
+          <div className="flex justify-around items-center h-16 px-2">
+            {[
+              { id: "details", label: "Profile", icon: "manage_accounts" },
+              { id: "docs", label: "KYC Files", icon: "folder_shared" },
+              { id: "notifications", label: "Alerts", icon: "notifications" },
+              { id: "payments", label: "Comp & PF", icon: "payments" },
+            ].map((item) => {
+              const isActive = activeTab === item.id;
+              return (
+                <button
+                  key={item.id}
+                  onClick={() => setActiveTab(item.id)}
+                  className={`flex flex-col items-center justify-center gap-0.5 min-w-[54px] min-h-[44px] px-2 rounded-lg transition-colors ${
+                    isActive ? "text-orange-600 font-bold" : "text-slate-500 hover:text-slate-800"
+                  }`}
+                >
+                  <span className="material-symbols-outlined text-[20px]">{item.icon}</span>
+                  <span className="text-[10px] font-mono tracking-tight uppercase">{item.label}</span>
+                </button>
+              );
+            })}
+          </div>
+        </nav>
       </div>
     </div>
   );
