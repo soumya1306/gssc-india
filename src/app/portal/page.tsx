@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { GSSCLogoText } from "@/components/GSSCLogo";
+import { GSSCLogo } from "@/components/GSSCLogo";
 
 export default function EmployeePortalPage() {
   const [activeTab, setActiveTab] = useState("details");
@@ -75,7 +75,7 @@ export default function EmployeePortalPage() {
         {/* Brand */}
         <div className="h-16 px-5 border-b border-slate-100 flex items-center justify-between">
           <Link href="/">
-            <GSSCLogoText />
+            <GSSCLogo />
           </Link>
           <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-slate-100 text-slate-600">
             v2.4
@@ -123,17 +123,15 @@ export default function EmployeePortalPage() {
               <button
                 key={item.id}
                 onClick={() => setActiveTab(item.id)}
-                className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-xs font-semibold transition ${
-                  isActive
+                className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-xs font-semibold transition ${isActive
                     ? "bg-orange-50 text-orange-600 font-bold"
                     : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
-                }`}
+                  }`}
               >
                 <div className="flex items-center gap-2.5">
                   <span
-                    className={`material-symbols-outlined text-[18px] ${
-                      isActive ? "text-orange-600" : "text-slate-400"
-                    }`}
+                    className={`material-symbols-outlined text-[18px] ${isActive ? "text-orange-600" : "text-slate-400"
+                      }`}
                   >
                     {item.icon}
                   </span>
@@ -141,11 +139,10 @@ export default function EmployeePortalPage() {
                 </div>
                 {item.badge && (
                   <span
-                    className={`text-[10px] font-mono px-1.5 py-0.5 rounded ${
-                      isActive
+                    className={`text-[10px] font-mono px-1.5 py-0.5 rounded ${isActive
                         ? "bg-orange-200 text-orange-800"
                         : "bg-slate-100 text-slate-500"
-                    }`}
+                      }`}
                   >
                     {item.badge}
                   </span>
