@@ -118,8 +118,8 @@ export default function AdminDashboardPage() {
 
   return (
     <div className="min-h-screen bg-[#f8fafc] text-slate-800 flex">
-      {/* Sidebar */}
-      <aside className="w-64 bg-white border-r border-slate-200/90 flex flex-col fixed inset-y-0 left-0 z-30 shadow-xs">
+      {/* Sidebar (Desktop) */}
+      <aside className="hidden lg:flex w-64 bg-white border-r border-slate-200/90 flex-col fixed inset-y-0 left-0 z-30 shadow-xs">
         {/* Brand */}
         <div className="h-16 px-5 border-b border-slate-100 flex items-center justify-between">
           <Link href="/">
@@ -220,13 +220,16 @@ export default function AdminDashboardPage() {
       </aside>
 
       {/* Main Container */}
-      <div className="flex-1 ml-64 flex flex-col min-h-screen">
+      <div className="flex-1 ml-0 lg:ml-64 flex flex-col min-h-screen">
         {/* Header */}
-        <header className="h-16 bg-white/95 backdrop-blur-md border-b border-slate-200/90 fixed top-0 right-0 left-64 z-20 px-8 flex items-center justify-between shadow-xs">
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-100 border border-slate-200/80">
-              <span className="material-symbols-outlined text-orange-500 text-[18px]">factory</span>
-              <select className="bg-transparent text-xs font-bold text-slate-800 focus:outline-none cursor-pointer">
+        <header className="h-16 bg-white/95 backdrop-blur-md border-b border-slate-200/90 fixed top-0 right-0 left-0 lg:left-64 z-20 px-4 sm:px-6 lg:px-8 flex items-center justify-between shadow-xs">
+          <div className="flex items-center gap-2.5 sm:gap-4">
+            <Link href="/" className="lg:hidden flex items-center shrink-0">
+              <GSSCLogo className="h-8 w-auto" />
+            </Link>
+            <div className="flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg bg-slate-100 border border-slate-200/80">
+              <span className="material-symbols-outlined text-orange-500 text-[16px] sm:text-[18px]">factory</span>
+              <select className="bg-transparent text-[11px] sm:text-xs font-bold text-slate-800 focus:outline-none cursor-pointer max-w-[170px] sm:max-w-none truncate">
                 <option>Station 04 - Hazira High-Pressure Unit</option>
                 <option>Station 01 - Dahej Liquefaction Block</option>
                 <option>Station 02 - Jamnagar Refinery Feed</option>
@@ -238,14 +241,15 @@ export default function AdminDashboardPage() {
             </span>
           </div>
 
-          <div className="flex items-center gap-3 relative">
+          <div className="flex items-center gap-2 sm:gap-3 relative">
             {/* Notifications Button */}
             <button
               type="button"
               onClick={() => setShowNotifications(!showNotifications)}
-              className="w-9 h-9 rounded-lg hover:bg-slate-100 text-slate-600 flex items-center justify-center relative transition"
+              className="w-8 sm:w-9 h-8 sm:h-9 rounded-lg hover:bg-slate-100 text-slate-600 flex items-center justify-center relative transition"
+              aria-label="Alerts"
             >
-              <span className="material-symbols-outlined text-[20px]">notifications</span>
+              <span className="material-symbols-outlined text-[18px] sm:text-[20px]">notifications</span>
               <span className="w-2.5 h-2.5 rounded-full bg-orange-500 absolute top-1.5 right-1.5 ring-2 ring-white" />
             </button>
 
@@ -287,7 +291,7 @@ export default function AdminDashboardPage() {
         </header>
 
         {/* Content */}
-        <main className="p-8 pt-24 pb-20 flex-1 max-w-7xl w-full mx-auto space-y-6">
+        <main className="p-4 sm:p-6 lg:p-8 pt-20 lg:pt-24 pb-24 lg:pb-16 flex-1 max-w-7xl w-full mx-auto space-y-6">
           {/* Metric Banner */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="bg-white rounded-xl border border-slate-200/90 p-5 shadow-xs">
@@ -577,6 +581,44 @@ export default function AdminDashboardPage() {
             </div>
           </div>
         </main>
+
+        {/* Mobile Bottom Navigation Bar */}
+        <nav className="lg:hidden fixed bottom-0 left-0 right-0 z-30 pb-safe bg-white/95 backdrop-blur-xl border-t border-slate-200/90 shadow-[0_-1px_12px_rgba(0,0,0,0.06)]">
+          <div className="flex justify-around items-center h-16 px-2">
+            <a
+              href="#overview"
+              className="flex flex-col items-center justify-center gap-0.5 min-w-[54px] min-h-[44px] px-2 rounded-lg text-slate-500 hover:text-slate-800"
+            >
+              <span className="material-symbols-outlined text-[20px]">monitoring</span>
+              <span className="text-[10px] font-mono tracking-tight uppercase">Overview</span>
+            </a>
+            <button
+              onClick={() => setSelectedStatus("All")}
+              className={`flex flex-col items-center justify-center gap-0.5 min-w-[54px] min-h-[44px] px-2 rounded-lg transition-colors ${
+                selectedStatus === "All" ? "text-orange-600 font-bold" : "text-slate-500 hover:text-slate-800"
+              }`}
+            >
+              <span className="material-symbols-outlined text-[20px]">badge</span>
+              <span className="text-[10px] font-mono tracking-tight uppercase">Roster</span>
+            </button>
+            <button
+              onClick={() => setSelectedStatus("Pending KYC")}
+              className={`flex flex-col items-center justify-center gap-0.5 min-w-[54px] min-h-[44px] px-2 rounded-lg transition-colors ${
+                selectedStatus === "Pending KYC" ? "text-orange-600 font-bold" : "text-slate-500 hover:text-slate-800"
+              }`}
+            >
+              <span className="material-symbols-outlined text-[20px]">verified</span>
+              <span className="text-[10px] font-mono tracking-tight uppercase">KYC Docs</span>
+            </button>
+            <button
+              onClick={() => setShowRegisterModal(true)}
+              className="flex flex-col items-center justify-center gap-0.5 min-w-[54px] min-h-[44px] px-2 rounded-lg text-orange-600 font-bold"
+            >
+              <span className="material-symbols-outlined text-[20px]">person_add</span>
+              <span className="text-[10px] font-mono tracking-tight uppercase">+Register</span>
+            </button>
+          </div>
+        </nav>
       </div>
 
       {/* Screen 7: Register Employee Modal */}
